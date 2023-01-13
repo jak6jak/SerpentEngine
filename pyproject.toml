@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "SerpentEngine"
+version = "0.1.0"
+description = "Extends pygame for easier use."
+license = "MIT"
+authors = ["Jacob Edie <jacobedie1@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/jak6jak/SerpentEngine"
+repository = "https://github.com/jak6jak/SerpentEngine"
+keywords = ["pygame"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+packages = [{include = "pygame_extended"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygame = "^2.1.2"
+chemical = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^6.0.0"
+furo = "^2022.12.7"
+livereload = "^2.6.3"
+yappi = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
